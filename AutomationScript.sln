@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{F29FE868-B6AA-4605-9429-F9EB3DC2EC27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{261C04D8-E8B5-4565-AFD0-01A5C07331E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{62D23890-251C-495D-9676-2097BFF04FA2}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\readme.txt = Dlls\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{51BC6C50-1E01-4869-9D2C-3DE012AF8625}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\readme.txt = Documentation\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{12FD505E-2EAB-43EE-BF4C-A664696B0FBD}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\SonarLint-QuickActions-Active.ruleset = Internal\Code Analysis\SonarLint-QuickActions-Active.ruleset
+		Internal\Code Analysis\SonarLint-QuickActions-Inactive.ruleset = Internal\Code Analysis\SonarLint-QuickActions-Inactive.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationScript_ClassLibrary", "AutomationScript_ClassLibrary\AutomationScript_ClassLibrary.csproj", "{2A6F6821-1D25-4838-B6E1-1F45647B6C13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audio System Scheduler", "Audio System Scheduler", "{E392B0AD-F84F-4FF9-ABF8-49E21A309263}"
+	ProjectSection(SolutionItems) = preProject
+		Audio System Scheduler.xml = Audio System Scheduler.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{9A02B4FA-72FD-4469-BF88-314DCDA677AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio System Scheduler_4", "Audio System Scheduler_4\Audio System Scheduler_4.csproj", "{D15D2D6E-0601-4B1D-B23F-9E64272AA385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A6F6821-1D25-4838-B6E1-1F45647B6C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6F6821-1D25-4838-B6E1-1F45647B6C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6F6821-1D25-4838-B6E1-1F45647B6C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6F6821-1D25-4838-B6E1-1F45647B6C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D15D2D6E-0601-4B1D-B23F-9E64272AA385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15D2D6E-0601-4B1D-B23F-9E64272AA385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15D2D6E-0601-4B1D-B23F-9E64272AA385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15D2D6E-0601-4B1D-B23F-9E64272AA385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12FD505E-2EAB-43EE-BF4C-A664696B0FBD} = {F29FE868-B6AA-4605-9429-F9EB3DC2EC27}
+		{2A6F6821-1D25-4838-B6E1-1F45647B6C13} = {F29FE868-B6AA-4605-9429-F9EB3DC2EC27}
+		{E392B0AD-F84F-4FF9-ABF8-49E21A309263} = {261C04D8-E8B5-4565-AFD0-01A5C07331E9}
+		{9A02B4FA-72FD-4469-BF88-314DCDA677AE} = {E392B0AD-F84F-4FF9-ABF8-49E21A309263}
+		{D15D2D6E-0601-4B1D-B23F-9E64272AA385} = {9A02B4FA-72FD-4469-BF88-314DCDA677AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB7D43CE-B1FA-407D-B940-FE20C7C72C33}
+	EndGlobalSection
+EndGlobal

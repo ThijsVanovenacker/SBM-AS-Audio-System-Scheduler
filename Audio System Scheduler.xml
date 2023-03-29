@@ -1,0 +1,65 @@
+﻿<DMSScript options="272">
+	<Name>Audio System Scheduler</Name>
+	<Description>
+	</Description>
+	<Type>Automation</Type>
+	<Author>API</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder></Folder>
+	<Protocols>
+		<Protocol id="1">
+			<Description>Element</Description>
+			<Name>Salzbrenner Media Mekkah Audio System Scheduler</Name>
+			<Version>1.0.0.1</Version>
+			<DefaultElement>
+			</DefaultElement>
+		</Protocol>
+	</Protocols>
+	<Memory>
+	</Memory>
+	<Parameters>
+		<ScriptParameter id="1" type="string" values="">
+			<Description>ID</Description>
+		</ScriptParameter>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>Data</Description>
+		</ScriptParameter>
+		<ScriptParameter id="3" type="string" values="">
+			<Description>Start</Description>
+		</ScriptParameter>
+	</Parameters>
+	<Script>
+		<Exe id="4" type="csharp">
+			<Value>
+				<![CDATA[using Skyline.DataMiner.Automation;
+
+internal class Script
+{
+	public void Run(Engine engine)
+	{
+		string currentKey = engine.GetScriptParam("ID").Value;
+		engine.GenerateInformation(currentKey);
+
+		ScriptDummy dummyTable = engine.GetDummy("Element");
+
+		string primaryKey = dummyTable.FindPrimaryKey(100, currentKey);
+		engine.GenerateInformation(primaryKey);
+
+		string startOrstop = engine.GetScriptParam("Start").Value;
+
+		if (startOrstop == "End")
+		{
+			dummyTable.SetParameter(111, primaryKey, 6);
+		}
+		else if (startOrstop == "Start")
+		{
+			dummyTable.SetParameter(111, primaryKey, 2);
+		}
+	}
+}]]>
+			</Value>
+			<Message>
+			</Message>
+		</Exe>
+	</Script>
+</DMSScript>

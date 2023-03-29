@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodePackage xmlns="http://www.skyline.be/ClassLibrary">
+	<Identity>
+		<Name>UtilityLibrary</Name>
+		<Version>1.0.0.8</Version>
+	</Identity>
+	<MinimumRequiredVersion>9.0.0.0 - 7282</MinimumRequiredVersion>
+	<Dependencies>
+		<Dependency min="1.0.0.1">Class Library</Dependency>
+	</Dependencies>
+</CodePackage>
